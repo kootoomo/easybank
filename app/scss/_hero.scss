@@ -2,8 +2,8 @@
 
   background-color: $veryLightGray;
 
-  .container{
-    @include breakpoint-up(large){
+  .container {
+    @include breakpoint-up(large) {
       display: flex;
       align-items: center;
     }
@@ -11,7 +11,7 @@
 
   &__image {
     position: relative;
-    background-image: url("../../images/bg-intro-mobile.svg");
+    background-image: url("images/bg-intro-mobile.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -33,11 +33,11 @@
 
     &::before {
 
-      @include breakpoint-up(large){
+      @include breakpoint-up(large) {
         content: "";
         position: absolute;
         height: 100%;
-        background-image: url("../../images/bg-intro-desktop.svg");
+        background-image: url("/images/bg-intro-desktop.svg");
         background-repeat: no-repeat;
         background-position: center bottom;
         width: 150%;
@@ -48,10 +48,10 @@
 
     &::after {
       content: "";
-      position: absolute;      
+      position: absolute;
       height: 100%;
       width: 100%;
-      background-image: url("../../images/image-mockups.png");
+      background-image: url("/images/image-mockups.png");
       background-size: 93%;
       background-repeat: no-repeat;
       background-position: center bottom;
@@ -60,7 +60,7 @@
         background-size: 52%;
       }
 
-      @include breakpoint-up(large){
+      @include breakpoint-up(large) {
         width: 120%;
         height: 122%;
         background-size: 94%;
@@ -71,7 +71,7 @@
     }
   }
 
-  &__text{
+  &__text {
     text-align: center;
 
     @include breakpoint-up(large) {
